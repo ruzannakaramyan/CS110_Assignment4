@@ -25,9 +25,11 @@ function gcd(a, b) {
 //12 = 9*1 + 3 
 //9 = 3 * 3 + 0 
 
- function hcf(a, b){
-  return gcd(a, b);
+ function lcm(a, b){
+  return a*b / gcd(a, b);
 }
+
+console.log(lcm(12,9));
 
 console.log(hcf(12,9));
 
